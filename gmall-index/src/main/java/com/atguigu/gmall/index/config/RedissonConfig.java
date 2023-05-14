@@ -20,7 +20,7 @@ public class RedissonConfig {
         Config config = new Config();
         // 可以用"rediss://"来启用SSL连接
         // useSingleServer 单节点
-        config.useSingleServer().setAddress("redis://192.168.0.101:6379");
+        config.useSingleServer().setAddress("redis://localhost:6379");
         return Redisson.create(config);
     }
 }

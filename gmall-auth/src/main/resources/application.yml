@@ -4,7 +4,7 @@ spring:
   cloud:
     nacos:
       discovery: # \u6CE8\u518C\u4E2D\u5FC3\u914D\u7F6E
-        server-addr: 192.168.0.101:8848 # nacos \u6CE8\u518C\u4E2D\u5FC3\u5730\u5740
+        server-addr: localhost:8848 # nacos \u6CE8\u518C\u4E2D\u5FC3\u5730\u5740
     sentinel: # \u9650\u6D41\u914D\u7F6E
       transport:
         dashboard: 192.168.0.101:8080 # sentinel \u5BA2\u6237\u7AEF\u5730\u5740
@@ -23,8 +23,8 @@ feign: # feign
   sentinel:
     enabled: true # \u5F00\u542F feign \u7684 sentinel \u529F\u80FD
 jwt:
-  pubKeyPath: /Users/admin/Documents/project/learn/gmall/gmall-auth/src/main/resources/rsa/rsa.pub # \u53EF\u4EE5\u653E\u5728\u914D\u7F6E\u4E2D\u5FC3
-  priKeyPath: /Users/admin/Documents/project/learn/gmall/gmall-auth/src/main/resources/rsa/rsa.pri # \u53EF\u4EE5\u653E\u5728\u914D\u7F6E\u4E2D\u5FC3
+  pubKeyPath: /Users/gilgamesh/IDEAProjects/gmall/gmall-auth/src/main/resources/rsa/rsa.pub # \u53EF\u4EE5\u653E\u5728\u914D\u7F6E\u4E2D\u5FC3
+  priKeyPath: /Users/gilgamesh/IDEAProjects/gmall/gmall-auth/src/main/resources/rsa/rsa.pri # \u53EF\u4EE5\u653E\u5728\u914D\u7F6E\u4E2D\u5FC3
   secret: 30489ouerweljrLROE@#)(@$*343jlsdf # \u76D0
   cookieName: GMALL-TOKEN # cookie \u540D\u79F0
   expire: 480 # \u8FC7\u671F\u65F6\u95F4

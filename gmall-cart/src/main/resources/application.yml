@@ -4,7 +4,7 @@ spring:
   cloud:
     nacos:
       discovery: # 注册中心配置
-        server-addr: 192.168.0.101:8848 # nacos 注册中心地址
+        server-addr: localhost:8848 # nacos 注册中心地址
     sentinel: # 限流配置
       transport:
         dashboard: 192.168.0.101:8080 # sentinel 客户端地址
@@ -21,18 +21,18 @@ spring:
     cache: false
   datasource: # MySQL
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://192.168.0.101:3306/guli_cart?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai # 连接协议
+    url: jdbc:mysql://43.142.169.165:3306/guli_cart?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai # 连接协议
     username: root
-    password: root
+    password: 'F>wFlGw?d2%v'
   redis: # Redis
-    host: 192.168.0.101
+    host: localhost
     port: 6379
   rabbitmq:
-    host: 192.168.0.101
+    host: 43.142.169.165
     port: 5672
     virtual-host: /admin # 虚拟主机
-    username: admin
-    password: admin
+    username: guest
+    password: guest
     listener:
       # 消费者类型. direct 不能多线程消费
       type: simple # simple 另开线程获取消息、direct 直接使用消费者主线程获取消息
@@ -81,6 +81,6 @@ logging: # 查看执行 SQL
     com.atguigu.gmall.cart: debug # debug 模式
 jwt:
   cookieName: GMALL-TOKEN
-  pubKeyPath: /Users/admin/Documents/project/learn/gmall/gmall-auth/src/main/resources/rsa/rsa.pub
+  pubKeyPath: /Users/gilgamesh/IDEAProjects/gmall/gmall-auth/src/main/resources/rsa/rsa.pub
   userKey: user-key
   expire: 864000

@@ -69,7 +69,7 @@
 
 ```yaml
   rabbitmq:
-    host: 192.168.0.101
+    host: 43.142.169.165
     port: 5672
     virtual-host: /admin
     username: admin

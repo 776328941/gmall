@@ -311,7 +311,7 @@ public class ItemService {
 
     private void generateHtml(ItemVo itemVo) {
         // 生产环境可以把静态页面生成到共享硬盘，这样商品详情页服务可以把静态页面生成到共享硬盘，nginx服务器可以从共享硬盘读取静态页面。
-        try (PrintWriter printWriter = new PrintWriter(new File("/Users/admin/Documents/html/", itemVo.getSkuId() + ".html"))) {
+        try (PrintWriter printWriter = new PrintWriter(new File("/Users/gilgamesh/Documents/html", itemVo.getSkuId() + ".html"))) {
             // 上下文对象的初始化
             Context context = new Context();
             // 页面静态化所需要的数据模型

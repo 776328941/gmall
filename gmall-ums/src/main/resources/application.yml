@@ -4,7 +4,7 @@ spring:
   cloud:
     nacos:
       discovery: # \u6CE8\u518C\u4E2D\u5FC3\u914D\u7F6E
-        server-addr: 192.168.0.101:8848 # nacos \u6CE8\u518C\u4E2D\u5FC3\u5730\u5740
+        server-addr: localhost:8848 # nacos \u6CE8\u518C\u4E2D\u5FC3\u5730\u5740
     sentinel: # \u9650\u6D41\u914D\u7F6E
       transport:
         dashboard: 192.168.0.101:8080 # sentinel \u5BA2\u6237\u7AEF\u5730\u5740
@@ -19,11 +19,11 @@ spring:
       probability: 1 # \u91C7\u96C6\u7387, \u9ED8\u8BA4\u662F \u767E\u5206\u4E4B10 \u751F\u4EA7\u65F6\u4F7F\u7528, \u5F00\u53D1\u5E94\u8BE5\u8BBE\u7F6E\u4E3A 1 \u91C7\u96C6\u5168\u90E8\u8BF7\u6C42
   datasource: # MySQL
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://192.168.0.101:3306/guli_ums?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai # \u8FDE\u63A5\u534F\u8BAE
+    url: jdbc:mysql://43.142.169.165:3306/guli_ums?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai # \u8FDE\u63A5\u534F\u8BAE
     username: root
-    password: root
+    password: 'F>wFlGw?d2%v'
   redis: # Redis
-    host: 192.168.0.101
+    host: localhost
     port: 6379
 feign: # feign
   sentinel:
